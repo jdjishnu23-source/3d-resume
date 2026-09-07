@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Jishnu Wathan - 3D Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">3D Resume</div>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#skills" onclick="navigateTo('skills')">Skills</a></li>
+                <li><a href="#projects" onclick="navigateTo('projects')">Projects</a></li>
+                <li><a href="#certificates" onclick="navigateTo('certificates')">Certificates</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 3D Canvas Container -->
+    <div class="canvas-container">
+        <canvas id="canvas3d"></canvas>
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loader"></div>
+            <p>Loading 3D Resume...</p>
+        </div>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div class="content-wrapper">
+        
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="section-content">
+                <h1 class="title">P. JISHNU WATHAN</h1>
+                <p class="subtitle">Student | Developer | Tech Enthusiast</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> jdjishnu23@gmail.com</p>
+                    <p><strong>Location:</strong> 28/04 Brass Founder Street, Colombo-13</p>
+                </div>
+                <button class="cta-button" onclick="navigateTo('about')">Explore My Profile</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <div class="about-box">
+                    <p>I'm a passionate student developer with a keen interest in web technologies, 3D graphics, and interactive applications. I love creating innovative solutions and constantly learning new technologies.</p>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Name</h3>
+                            <p>P. Jishnu Wathan</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Status</h3>
+                            <p>Student</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Email</h3>
+                            <p>jdjishnu23@gmail.com</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Location</h3>
+                            <p>Colombo-13, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-content">
+                <h2>Skills & Tools</h2>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Three.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend & Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">3D Graphics</span>
+                            <span class="skill-tag">Full Stack Development</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Web Animation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>3D Interactive Resume</h3>
+                            <span class="project-tag">Three.js • React • WebGL</span>
+                        </div>
+                        <p>An immersive 3D resume website showcasing my skills, projects, and achievements with interactive 3D elements and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>Three.js</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <span class="project-tag">Web Design</span>
+                        </div>
+                        <p>A modern and responsive portfolio website displaying my work, skills, and professional journey with smooth scrolling and animations.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Full Stack Web Application</h3>
+                            <span class="project-tag">MERN Stack</span>
+                        </div>
+                        <p>A complete web application built with MongoDB, Express, React, and Node.js, demonstrating full stack development capabilities.</p>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>E-Commerce Platform</h3>
+                            <span class="project-tag">Database Management</span>
+                        </div>
+                        <p>A dynamic e-commerce platform with user authentication, product management, and payment integration features.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Real-time Chat Application</h3>
+                            <span class="project-tag">WebSocket</span>
+                        </div>
+                        <p>A real-time messaging application with user authentication, message history, and online status indicators.</p>
+                        <div class="project-tech">
+                            <span>Socket.io</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AI-Powered Task Manager</h3>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <p>An intelligent task management system with AI-powered suggestions and automated task categorization.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <div class="section-content">
+                <h2>Certificates & Achievements</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>Full Stack Web Development</h3>
+                        <p class="cert-issuer">Udemy | 2024</p>
+                        <p class="cert-description">Completed comprehensive course on MERN stack development</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>JavaScript Mastery</h3>
+                        <p class="cert-issuer">freeCodeCamp | 2024</p>
+                        <p class="cert-description">Advanced JavaScript concepts and modern ES6+ features</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>React Advanced Concepts</h3>
+                        <p class="cert-issuer">Coursera | 2024</p>
+                        <p class="cert-description">Mastered React hooks, state management, and performance optimization</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>Web Design & UX</h3>
+                        <p class="cert-issuer">Google | 2023</p>
+                        <p class="cert-description">Responsive design principles and user experience best practices</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>Database Design</h3>
+                        <p class="cert-issuer">LinkedIn Learning | 2023</p>
+                        <p class="cert-description">SQL and NoSQL database design and optimization techniques</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="cert-icon">📜</div>
+                        <h3>Version Control with Git</h3>
+                        <p class="cert-issuer">GitHub Learning Lab | 2023</p>
+                        <p class="cert-description">Git workflows, collaboration, and open source contribution practices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2>Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info-box">
+                        <h3>Contact Details</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:jdjishnu23@gmail.com">jdjishnu23@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Address:</span>
+                            <p>28/04 Brass Founder Street, Colombo-13, Sri Lanka</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Social:</span>
+                            <div class="social-links">
+                                <a href="https://github.com" target="_blank">GitHub</a>
+                                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                                <a href="https://twitter.com" target="_blank">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 P. Jishnu Wathan. All rights reserved. | 3D Interactive Resume</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
